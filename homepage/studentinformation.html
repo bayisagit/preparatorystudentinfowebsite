@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="icon" href="../images/favicon.png">
+    <link rel="stylesheet" href="./css/studentinformation.css">
+</head>
+<body>
+    <header class="header_n">
+        <section class="header-title-line">
+          <h1 class="logo_n">TDPSchool</h1>
+          <button class="menu-button" onclick="toggleMenu()">
+            <div class="menu-icon"><i class="fa fa-bars"></i></div>
+            <div class="close-icon"><i class="fa fa-times"></i></div>
+          </button>
+        </section>
+        <nav class="hero_nav">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="announcement.html">Announcement</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="login.html">Login</a></li>
+          </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="student-info-header">
+            <div class="top">
+                <div class="m">
+                    <h2 class="forh">Student Information Portal</h2>
+                    <div class="studentInfo">
+                        <p><strong>Full Name:</strong> John Doe</p>
+                        <p><strong>Id:</strong> 0201/15</p>
+                        <p>
+                            <label for="yearTermDropdown"><strong>Year & Term:</strong></label>
+                            <select id="yearTermDropdown" onchange="navigateToYearTerm()">
+                                <option value="">Select Year & Term</option>
+                                <option value="year1_term1.html">Year 1 Term 1</option>
+                                <option value="year1_term2.html">Year 1 Term 2</option>
+                                <option value="year2_term1.html">Year 2 Term 1</option>
+                                <option value="year2_term2.html">Year 2 Term 2</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+                <nav class="student-nav">
+                    <ul>
+                        <li><a href="#progress">Academic Progress</a></li>
+                        <li><a href="#attendance">Attendance</a></li>
+                        <li><a href="#behavior">Behavior</a></li>
+                        <li><a href="#participation">Participation</a></li>
+                        <li><a href="#comments">Comments</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section class="img">
+            <p>Know</p>
+            <p>More</p>
+            <p class="span"> About Your Children</p>
+            <p>
+                <a href="#progress"><button class="button">Know</button></a>
+            </p>
+        </section>
+
+        <section id="progress">
+            <h2 >Academic Progress</h2>
+            <div style="overflow-x:auto;">
+                <table class="progress-table">
+                    <thead>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Tests (10)</th>
+                            <th>Homework (10)</th>
+                            <th>Mid Exams (20)</th>
+                            <th>Assignments (10)</th>
+                            <th>Final Exam (50)</th>
+                            <th>Total (Out of 50)</th>
+                            <th>Total (Out of 100)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>English</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>15</td>
+                            <td>10</td>
+                            <td>__</td>
+                            <td>25</td>
+                            <td>__</td>
+                        </tr>
+                        <tr>
+                            <td>Math</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>__</td>
+                            <td>17.5</td>
+                            <td>__</td>
+                        </tr>
+                        <tr>
+                            <td>Physics</td>
+                            <td>7</td>
+                            <td>9</td>
+                            <td>12</td>
+                            <td>8</td>
+                            <td>__</td>
+                            <td>19.5</td>
+                            <td>__</td>
+                        </tr>
+                        <tr>
+                            <td>Chemistry</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>18</td>
+                            <td>9</td>
+                            <td>__</td>
+                            <td>30</td>
+                            <td>__</td>
+                        </tr>
+                        <tr>
+                            <td>Biology</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>16</td>
+                            <td>10</td>
+                            <td>__</td>
+                            <td>30</td>
+                            <td>__</td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+        </section>
+        <div class="kan">
+            <div>
+                <section id="attendance" class="info-box">
+                    <h2>Attendance</h2>
+                    <p>Total Classes: 100</p>
+                    <p>Classes Attended: 90</p>
+                    <p>Classes Missed: 10</p>
+                    <p>Attendance Rate: 90%</p>
+                </section>    
+            </div>
+            <div>
+                <section id="behavior" class="info-box">
+                    <h2>Behavior in Class</h2>
+                    <p>Behavior Rating: 4.5/5</p>
+                    <p>Comments: Generally behaves well, participates actively.</p>
+                    <br><br>
+                </section>    
+            </div> 
+            <div>
+                <section id="participation" class="info-box">
+                    <h2>Participation in Class</h2>
+                    <p>Participation Rate: 85%</p>
+                    <p>Comments: Frequently asks questions and engages in discussions.</p>
+                    <br><br>
+                </section>    
+            </div> 
+            <div>
+                <section id="summary" class="info-box">
+                    <h2>Overall Summary</h2>
+                    <p>Overall Grade: B+</p>
+                    <p>Strengths: Strong in English and Chemistry.</p>
+                    <p>Areas for Improvement: Focus on Math and Physics.</p>
+                    <br>
+                </section>    
+            </div>   
+            <div>
+                <section id="comments" class="comment-section">
+                    <h2>Comments Section</h2>
+                    <form>
+                        <label for="familyComments">Leave your comments:</label><br>
+                        <textarea id="familyComments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </section>        
+            </div>                         
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="top">
+            <div class="left">
+            <p>TPSchool</p>
+            <div class="links">
+                <a href="home.html">| Home</a>
+                <a href="announcement.html">| Announcement</a>
+                <a href="home.html">| Resource</a>
+                <a href="about.html">| About Us</a>
+                <a href="home.html">| Services</a>
+            </div>
+            </div>
+            <div class="center">
+            <div class="i1">
+                <a href="https://rb.gy/9wc7ix"></a><i class="fa fa-map-marker"></i>
+                <p><span>Tullu Dimtu</span><br>Tullu Dimtu, Addis Ababa</p>
+            </div>
+            <div class="i2">
+                <p><i class="fa fa-phone"></i> +251 955185491</p>
+            </div>
+            <div class="i3">
+                <p><a href="mailto:Ggura2001@gmail.com"><i class="fa fa-envelope"></i> TDPSchool2001@gmail.com</a></p>
+            </div>
+            </div>
+            <div class="right">
+            <p class="follow_us"><span>Follow Us</span></p>
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-telegram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <p>TPSchool Primary School &copy; 2023</p>
+        </div>
+    </footer>
+    <script src="./js/homepage.js"></script>
+    <script src="./js/navigateyear.js"></script>
+    <script src="./js/studentinformation.js"></script>
+</body>
+</html>

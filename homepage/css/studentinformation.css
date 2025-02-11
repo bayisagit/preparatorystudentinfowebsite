@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: linear-gradient(to top,rgba(106, 118, 180, 0.9 ),rgba(0, 3, 18, 0.6)), url("../../images/school-gcap.jpg");
+    margin: 10px;
+    border-radius: 30px;
+}
+
+/* Student Info Header */
+.student-info-header {
+    border-radius: 20px;
+    background-color: rgb(156, 156, 172);
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.forh{
+    text-align: left;
+}
+.m{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+.studentInfo {
+    font-size: 1.2rem;
+    margin-right: 20px;
+}
+
+.studentInfo p {
+    text-align: right;
+    justify-content: space space-between;
+    display: inline;
+    margin-right: 30px;
+}
+
+.student-nav {
+    background: linear-gradient(to top,rgba(106, 118, 180, 0.9 ),rgba(0, 3, 18, 0.6)),url(../../images/progress.jpg);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #380838;
+}
+
+.student-nav ul {
+    background-color: rgb(97, 97, 125);
+    list-style-type: none;
+    padding: 0;
+}
+
+.student-nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.student-nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+.img{
+    background: linear-gradient(to top,rgba(106, 118, 180, 0.9 ),rgba(0, 3, 18, 0.6)), url("../../images/loveschool.webp");
+    width:100%;
+    padding: 14% 0px 20% 0px;
+    font-size:70px;
+    color:rgb(165, 196, 118);
+    z-index: 10px; 
+}
+.img p,.img a{
+    color: #fff;
+    padding-left:2%;
+    text-align: center;
+}
+.img .span {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+.button { 
+    border: solid black 1px;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgb(196, 184, 168);
+}
+
+.img .button:hover {
+    background: hsl(223, 11%, 88%);
+}
+
+
+/* Progress Table */
+#progress h2{
+    padding: 20px;
+    color:#e6ffcc;
+}
+.progress-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.progress-table th, .progress-table td {
+    border: 1px solid #4CAF50;
+    padding: 8px;
+    text-align: center;
+}
+
+.progress-table th {
+    background-color: #4CAF50;
+    color: rgb(68, 9, 9);
+}
+
+.progress-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.progress-table tr:nth-child(odd) {
+    background-color: #9393e2;
+}
+
+
+/* Info Boxes */
+.info-box {
+    display: inline-block;
+    width: 93%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #e6f7ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#attendance {
+    background-color: #e6ffcc;
+}
+
+#behavior {
+    background-color: #9c809c;
+}
+
+#participation {
+    background-color: #9c809c;
+}
+
+#summary {
+    background-color: #e6ffcc;
+}
+
+/* Comment Section */
+.comment-section {
+    width: 80%;
+    height: 80;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+.comment-section textarea {
+    width: 90%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.comment-section button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #45a049;
+}
+.kan{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+.kan >div{
+    width: 50%;
+}
+@media only screen and (max-width:1003px) {
+    .kan{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .kan >div{
+        width: 97%;
+    }
+}
